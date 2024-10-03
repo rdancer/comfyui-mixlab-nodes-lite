@@ -87,15 +87,6 @@ except ImportError:
     sys.exit()
 
 
-def install_openai():
-    # Helper function to install the OpenAI module if not already installed
-    try:
-        importlib.import_module('openai')
-    except ImportError:
-        import pip
-        pip.main(['install', 'openai'])
-
-install_openai()
 
 
 current_path = os.path.abspath(os.path.dirname(__file__))
@@ -996,12 +987,12 @@ from .nodes.ImageNode import FaceToMask
 # 要导出的所有节点及其名称的字典
 # 注意：名称应全局唯一
 NODE_CLASS_MAPPINGS = {
-    "FaceToMask":FaceToMask,
+    "Rdancer_FaceToMask":FaceToMask,
 }
 
 # 一个包含节点友好/可读的标题的字典
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "FaceToMask":"Face To Mask ♾️Mixlab",
+    "Rdancer_FaceToMask":"Face To Mask ♾️Mixlab (Lite 💃)",
 }
 
 # web ui的节点功能
@@ -1014,3 +1005,5 @@ logging.info('\033[91m ### Mixlab Nodes: \033[93mLoaded')
 
 
 logging.info('\033[93m -------------- \033[0m')
+
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
