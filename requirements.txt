@@ -1,14 +1,16 @@
+# Packages that we don't need in this Lite version of the nodepack have been commented out.
+
 numpy
 pyOpenSSL
 watchdog
 opencv-python-headless
 matplotlib
-torchaudio
+# torchaudio
 
-clip-interrogator==0.6.0
+# clip-interrogator==0.6.0
 transformers>=4.36.0
 lark-parser
-imageio-ffmpeg
+# imageio-ffmpeg
 rembg[gpu]
 omegaconf>=2.3.0
 Pillow>=9.5.0
@@ -16,10 +18,10 @@ einops>=0.7.0
 trimesh>=4.0.5
 huggingface-hub
 scikit-image
-soundfile>=0.12.1
+# soundfile>=0.12.1
 json-repair
 
-bitsandbytes
+# bitsandbytes
 accelerate
 scenedetect[opencv-headless]
 
@@ -29,5 +31,7 @@ natsort>=8.4.0
 
 #simple-lama-inpainting
 
-git+https://github.com/shadowcz007/SenseVoice-python.git
+# git+https://github.com/shadowcz007/SenseVoice-python.git
 
+
+opencv-contrib-python
